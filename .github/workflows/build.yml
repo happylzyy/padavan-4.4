@@ -1,4 +1,4 @@
-name: build
+name: build-MI-R3P
 
 on: 
   #push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        target: [K2P,RT-AC85P,CR660x]
+        target: [MI-R3P]
         toolchain: [mipsel-linux-musl]
     steps:
       - uses: actions/checkout@v3
